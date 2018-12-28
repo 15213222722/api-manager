@@ -43,7 +43,7 @@
                         <a class="btn btn-adorn r5 w150 f14 ml10" href="user/mock.do" target="_blank">免登录试用</a>
                     </c:if>
                 </div>
-
+<%-- 
 
                     <div class="tr mt50">
                         <div class="fr ml20">
@@ -57,7 +57,7 @@
                             </a>
                         </div>
                         <div class="fr ml20">10k+ Users</div>
-                    </div>
+                    </div> --%>
 
             </div>
         </div>
@@ -67,7 +67,7 @@
 <!-- 功能点介绍 -->
 <div class="index-top-menu">
     <div class="container p0">
-        <!--<c:if test="${login}">
+        <c:if test="${login}">
             <img class="main-bg fl w40 h40 r50P mt-5" src="${avatarUrl}"/>
         </c:if>
         <c:if test="${!login}">
@@ -80,7 +80,7 @@
                 <a class="C555 adorn-hover-color" href="index.do#/project/list?projectShowType=3"
                    target="_blank">浏览项目</a>
             </div>
-        </c:if>-->
+        </c:if>
         <c:forEach items="${menuList}" var="menuDto" varStatus="id">
             <c:if test="${menuDto.menu.type=='TOP'}">
                 <div class="BGFFF fr ml50 pl15 pr15">
@@ -142,8 +142,8 @@
     </div>
 </div>
 
-<div class="container p0">
-        <!-- 求赞赏 -->
+<!-- <div class="container p0">
+        求赞赏
         <div class="cb"></div>
         <div class="lh26 f12 p30">
             <div class="bc w150 fw500 f20 bb1 mb50 tc p10 adorn-color">开发者宣言</div>
@@ -168,7 +168,7 @@
                 </td>
             </table>
         </div>
-</div>
+</div> -->
 
 
 <!-- footer navbar -->
@@ -176,8 +176,8 @@
         <div class="container mt20 r5 r20 p5 h26 tr">
                     友情链接：
                     <ul class="dis-in-tab p0 m0">
-                        <li class="dis-in-tab mr20"><a target="_blank" href="http://api.crap.cn">CrapApi官网</a> <span
-                                class="bg_line"></span></li>
+                        <!-- <li class="dis-in-tab mr20"><a target="_blank" href="http://api.crap.cn">CrapApi官网</a> <span
+                                class="bg_line"></span></li> -->
                         <c:forEach items="${menuList}" var="menuDto" varStatus="id">
                             <c:if test="${menuDto.menu.type=='FRIEND'}">
                                 <a target="_blank" class="mr20" href="${menuDto.menu.menuUrl}">${menuDto.menu.menuName}</a>
@@ -187,9 +187,9 @@
         </div>
 
         <div class="container h26  r20 p0 pl20 tc b1 mb20">
-            ©<a href="http://crap.cn" target="_blank">crap.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版本号 [V8.1.0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- ©<a href="http://crap.cn" target="_blank">crap.cn</a> -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版本号 [V8.1.0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <ul class="dis-in-tab p0 m0">
-                <li class="dis-in-tab mr20">
+                <!-- <li class="dis-in-tab mr20">
                     <a target="_blank" href="http://api.crap.cn/static/help/help-articleList--1.html">帮助文档</a>
                 </li>
                 <li class="dis-in-tab mr20">
@@ -197,7 +197,7 @@
                 </li>
                 <li class="dis-in-tab mr20">
                     <a target="_blank" href="https://git.oschina.net/CrapApi/CrapApi">码云</a>
-                </li>
+                </li> -->
                 <c:forEach items="${menuList}" var="menuDto" varStatus="id">
                     <c:if test="${menuDto.menu.type=='BOTTOM'}">
                         <a target="_blank" class="mr20" href="${menuDto.menu.menuUrl}">${menuDto.menu.menuName}</a>

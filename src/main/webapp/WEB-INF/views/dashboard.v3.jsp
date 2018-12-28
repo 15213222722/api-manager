@@ -169,7 +169,7 @@
             <div class="col-xs-12 f12 p0 mb5 tl mt50 mb50">
                 ©crap.cn&nbsp;版本号 [V8.0.0]
                 <ul class="dis-in-tab">
-                    <li class="dis-in-tab mr20">
+                   <!--  <li class="dis-in-tab mr20">
                         <a target="_blank" href="http://api.crap.cn/static/help/help-articleList--1.html">帮助文档</a>
                     </li>
                     <li class="dis-in-tab mr20">
@@ -177,7 +177,7 @@
                     </li>
                     <li class="dis-in-tab mr20">
                         <a target="_blank" href="https://git.oschina.net/CrapApi/CrapApi">源码:码云</a>
-                    </li>
+                    </li> -->
                     <c:forEach items="${menuList}" var="menuDto" varStatus="id">
                         <c:if test="${menuDto.menu.type=='BOTTOM'}">
                             <a target="_blank" class="mr20" href="${menuDto.menu.menuUrl}">${menuDto.menu.menuName}</a>
@@ -187,8 +187,8 @@
                 <div class="mt20">
                     友情链接：
                     <ul class="dis-in-tab p0">
-                        <li class="dis-in-tab mr20"><a target="_blank" href="http://api.crap.cn">CrapApi官网</a> <span
-                                class="bg_line"></span></li>
+                        <!-- <li class="dis-in-tab mr20"><a target="_blank" href="http://api.crap.cn">CrapApi官网</a> <span
+                                class="bg_line"></span></li> -->
                         <c:forEach items="${menuList}" var="menuDto" varStatus="id">
                             <c:if test="${menuDto.menu.type=='FRIEND'}">
                                 <a target="_blank" class="mr20" href="${menuDto.menu.menuUrl}">${menuDto.menu.menuName}</a>
